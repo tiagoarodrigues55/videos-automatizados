@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/tiagoarodrigues55/tiagoarodrigues55/issues"
   },
-  "homepage": "https://github.com/tiagoarodrigues55/tiagoarodrigues55#readme"
+  "homepage": "https://github.com/tiagoarodrigues55/tiagoarodrigues55#readme",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
 }
