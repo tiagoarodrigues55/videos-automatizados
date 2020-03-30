@@ -1,8 +1,12 @@
 const readline = require('readline-sync')
-function start() {
+const robots = {
+        text: require('./robots/text.js')
+}
+async function start() {
         const content = {}
         content.searchTerm = askAndReturnSearchTerm()
         content.prefix = askAndReturnPrefix()
+        await   robots.text(content)
         function askAndReturnSearchTerm() {
                 return readline.question('Type a Wikipedia search term: ')
         }
@@ -12,7 +16,7 @@ function askAndReturnPrefix() {
     const selectedPrefixText = prefixes[selectedPrefixIndex] // retorna o texto do índice escolhido
     return selectedPrefixText // vai retornar o valor do texto e injetar na propriedade content.prefix
         }
-        console.log(content)
+  console.log(content)
 }
 
-start() 
+start()
